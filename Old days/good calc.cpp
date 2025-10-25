@@ -44,7 +44,7 @@ void wait() {
 void header() {
 	std::cout << "\033[1;36m";
 	std::cout << "===========================================\n";
-	std::cout << "           p'. TERMINAL CALCULATOR PRO        \n";
+	std::cout << "           p'. CALCULATOR PRO        \n";
 	std::cout << "===========================================\n";
 	std::cout << "\033[0m";
 }
@@ -268,3 +268,4 @@ int main() {
 	std::this_thread::sleep_for(std::chrono::milliseconds(400));
 	return 0;
 }
+

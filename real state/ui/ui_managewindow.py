@@ -1,0 +1,50 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_manageWindow(object):
+    def setupUi(self, manageWindow):
+        manageWindow.setObjectName("manageWindow")
+        manageWindow.resize(765, 306)
+        self.centralwidget = QtWidgets.QWidget(manageWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 20, 741, 251))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButton_7 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.gridLayout.addWidget(self.pushButton_7, 0, 1, 1, 1)
+        self.pushButton_6 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.gridLayout.addWidget(self.pushButton_6, 0, 0, 1, 1)
+        self.pushButton_9 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.gridLayout.addWidget(self.pushButton_9, 0, 2, 1, 1)
+        self.pushButton_4 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.gridLayout.addWidget(self.pushButton_4, 1, 0, 1, 1)
+        self.pushButton_5 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout.addWidget(self.pushButton_5, 1, 1, 1, 1)
+        self.pushButton_8 = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.gridLayout.addWidget(self.pushButton_8, 1, 2, 1, 1)
+        manageWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(manageWindow)
+        self.statusbar.setObjectName("statusbar")
+        manageWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(manageWindow)
+        QtCore.QMetaObject.connectSlotsByName(manageWindow)
+
+    def retranslateUi(self, manageWindow):
+        _translate = QtCore.QCoreApplication.translate
+        manageWindow.setWindowTitle(_translate("manageWindow", "manageWindow"))
+        self.pushButton_7.setText(_translate("manageWindow", "sell or lease or mortgage "))
+        self.pushButton_6.setText(_translate("manageWindow", "list of houses"))
+        self.pushButton_9.setText(_translate("manageWindow", "ad houses"))
+        self.pushButton_4.setText(_translate("manageWindow", "new request"))
+        self.pushButton_5.setText(_translate("manageWindow", "my requests"))
+        self.pushButton_8.setText(_translate("manageWindow", "my sells"))

@@ -43,8 +43,8 @@ public class Text {
 
     public void showall(){
         List<Daily> list = readall();
-        for(int i = 0 ; i < list.size(); i++){
-            System.out.println(list.get(i));
+        for (Daily daily : list) {
+            System.out.println(daily);
         }
     }
 
